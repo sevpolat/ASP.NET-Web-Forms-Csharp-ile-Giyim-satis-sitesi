@@ -1,0 +1,39 @@
+﻿<style >
+/* Ürünleri yatayda hizalamak için Flexbox kullanıyoruz */
+.product-gallery {
+    display: flex; /* Flexbox kullanarak öğeleri hizalayacağız */
+    flex-wrap: wrap; /* Öğeler satırlara sarılacak */
+    gap: 20px; /* Ürünler arasında boşluk */
+    padding: 20px;
+}
+
+/* Her bir ürünün düzenini ayarlamak */
+.product-item {
+    flex: 1 1 calc(33% - 20px); /* Ürünlerin her biri %33 genişliğe sahip olacak */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+    /* Ürün görselleri */
+    .product-item img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+/* Ürün detayları (isim, fiyat, açıklama vs.) */
+.product-details {
+    margin-top: 10px;
+}
+
+    .product-details label, .product-details input {
+        display: block;
+        margin: 10px 0;
+    }
+
+
+</style >
